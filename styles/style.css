@@ -39,6 +39,22 @@ font-weight: 300;
     margin-top: 13px;
 }
 
+
+.common-div{
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 23px 23px;
+    margin-top: 18px;
+}
+
+.common-hh{
+    color: rgb(19, 19, 19);
+font-size: 16px;
+font-weight: 500;
+text-align: left;
+}
+
 .text-align{
     text-align: center;
 }
@@ -110,11 +126,23 @@ text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/* feature related style */
+
+.feature-container{
+    display: flex;
+    gap: 35px;
+    padding: 19px 140px;
+}
+
+.feature-img img{
+    width: 474px;
+}
 /* mobile phone for media query */
 
 
 @media screen and (max-width:576px) {
-     nav, .quick-container{
+     nav, .quick-container, .feature-container{
         flex-direction: column;
         padding: 12px 12px;
      }
@@ -124,10 +152,13 @@ text-align: center;
         gap: 20px;
     }
 
-    .quick-content{
+    .quick-content, .center{
         text-align: center;
     }
      .banner-div, .banner-pic img{
         width: 320px;
+     }
+     .feature-img img{
+         width: 370px;
      }
 }
