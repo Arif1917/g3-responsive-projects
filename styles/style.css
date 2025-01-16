@@ -2,6 +2,9 @@
 .work-sans{
     font-family: "Work Sans", serif;
 }
+.hide{
+    display: none;
+}
 
 *{
     padding: 0;
@@ -212,7 +215,7 @@ background: rgb(255, 244, 231);
 
 @media screen and (max-width:576px) {
 
-    .paddingg-p{
+    .paddingg-p, .pad-section{
         padding: 12px 12px;
     }
      nav, .quick-container, .feature-container, .icon-img-container, .sponsor-img-container{
@@ -227,7 +230,7 @@ background: rgb(255, 244, 231);
 
     .icon-img{
          margin-bottom: 20px;
-         width: 100%;
+         width: 250px;
     }
     .sponsor-img-container > .sponsor-img{
         margin-top: 20px;
@@ -254,4 +257,9 @@ background: rgb(255, 244, 231);
         margin: 0 auto;
         text-align: left;
      }
+
+     .div-hudae > .common-subtitle,p{
+        text-align: center;
+     }
+    
 }
