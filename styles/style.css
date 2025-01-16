@@ -172,11 +172,33 @@ text-align: center;
     justify-content: space-between;
     
 }
+
+/* sponsor related style */
+
+.sponsor-div{
+    width: 370px;
+    margin: 0 auto;
+}
+.sponsor-div > h2{
+    text-align: center;
+   
+}
+.sponsor-div > p{
+      text-align: center;
+      margin-top: 15px;  
+}
+
+.sponsor-img-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    filter: grayscale(100%);
+}
 /* mobile phone for media query */
 
 
 @media screen and (max-width:576px) {
-     nav, .quick-container, .feature-container, .icon-img-container{
+     nav, .quick-container, .feature-container, .icon-img-container, .sponsor-img-container{
         flex-direction: column;
         padding: 12px 12px;
      }
@@ -190,7 +212,9 @@ text-align: center;
          margin-bottom: 20px;
          width: 100%;
     }
-
+    .sponsor-img-container > .sponsor-img{
+        margin-top: 20px;
+    }
     .quick-content, .center{
         text-align: center;
     }
