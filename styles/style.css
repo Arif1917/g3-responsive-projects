@@ -10,6 +10,10 @@
 
 /* shared style */
 
+section{
+    margin-top: 60px;
+}
+
 .common-subtitle{
     color: rgb(19, 19, 19);
     font-size: 35px;
@@ -82,15 +86,47 @@ text-align: center;
     text-align: center;
 }
 
+
+/* quick section related style */
+
+.quick-container{
+    display: flex;
+    align-items: center;
+    padding: 12px 160px;
+    gap: 40px;
+}
+
+.quick-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quick-img img{
+    width: 240px;
+}
+
+.margn-tip{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /* mobile phone for media query */
 
 
 @media screen and (max-width:576px) {
-     nav{
+     nav, .quick-container{
         flex-direction: column;
         padding: 12px 12px;
      }
+     .quick-img-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 
+    .quick-content{
+        text-align: center;
+    }
      .banner-div, .banner-pic img{
         width: 320px;
      }
