@@ -194,10 +194,27 @@ text-align: center;
     margin-top: 40px;
     filter: grayscale(100%);
 }
+
+/* footer related style */
+
+.paddingg-p{
+    padding: 30px 220px;
+
+}
+.footer{
+    width: 990px;
+    border-radius: 8px;
+    margin: 0 auto;
+background: rgb(255, 244, 231);
+}
 /* mobile phone for media query */
 
 
 @media screen and (max-width:576px) {
+
+    .paddingg-p{
+        padding: 12px 12px;
+    }
      nav, .quick-container, .feature-container, .icon-img-container, .sponsor-img-container{
         flex-direction: column;
         padding: 12px 12px;
@@ -221,11 +238,20 @@ text-align: center;
      .banner-div, .banner-pic img{
         width: 320px;
      }
-     .feature-img img{
+     .feature-img img {
          width: 370px;
+     }
+     .footer{
+        width: 300px;
+        margin: 0 auto;
      }
      .experience{
         margin-top: 10px;
         margin-left: 5px;
+     }
+     .sponsor-div{
+        width: 300px;
+        margin: 0 auto;
+        text-align: left;
      }
 }
