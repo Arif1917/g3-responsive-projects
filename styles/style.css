@@ -2,3 +2,96 @@
 .work-sans{
     font-family: "Work Sans", serif;
 }
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* shared style */
+
+.common-subtitle{
+    color: rgb(19, 19, 19);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.common-paragraph{
+    color: rgb(114, 114, 114);
+font-size: 13px;
+font-weight: 300;
+}
+
+.common-button{
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 16px 20px;
+    margin-top: 13px;
+}
+
+.text-align{
+    text-align: center;
+}
+
+/* banner related style */
+
+.header{
+    background: rgba(255, 144, 14, 0.1);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 42px 160px;
+}
+nav >ul{
+    display: flex;
+}
+
+nav >ul >li{
+    list-style: none;
+}
+nav >ul>li>a{
+    text-decoration: none;
+    margin-left: 14px;
+}
+
+.brand-title{
+    color: rgb(19, 19, 19);
+font-size: 45px;
+font-weight: 600;
+text-align: center;
+}
+.banner-div{
+    width: 577px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+.banner-pic img {
+    width: 1060px;
+    
+}
+.banner-pic{
+    text-align: center;
+}
+
+/* mobile phone for media query */
+
+
+@media screen and (max-width:576px) {
+     nav{
+        flex-direction: column;
+        padding: 12px 12px;
+     }
+
+     .banner-div, .banner-pic img{
+        width: 320px;
+     }
+}
